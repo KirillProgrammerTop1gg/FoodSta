@@ -23,6 +23,11 @@
   }
 }
 
+.main {
+  position: relative;
+  padding-top: 369px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -41,7 +46,14 @@ img {
   width: 100%;
 }
 
-.hero__hero {
+.hero {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.hero__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 28px;
