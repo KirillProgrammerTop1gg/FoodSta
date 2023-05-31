@@ -1,11 +1,12 @@
-@mixin text-style($font-family, $font-weight, $font-size, $line-height, $color){
-    font-family: $font-family;
+@mixin text-style($font-weight, $font-size, $line-height, $color: $maintext-color) {
+    font-family: 'Roboto';
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;
     color: $color;
 }
-@mixin flex($justify-content, $align-items, $flex-direction, $flex-wrap){
+
+@mixin flex($justify-content, $align-items, $flex-direction, $flex-wrap) {
     display: flex;
     justify-content: $justify-content;
     align-items: $align-items;
