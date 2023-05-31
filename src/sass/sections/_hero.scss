@@ -1,0 +1,22 @@
+.hero{
+    &__hero{
+        @include text-style(700, 28px, 1.18);
+    }
+    &__description{
+        @include text-style(400, 14px, 1.5);
+        margin-top: 28px;
+    }
+    &__button{
+        @include text-style(500, 13px, 1.5);
+        @include flex(center, center);
+        width: 98px;
+        height: 32px;
+        background: #BBF330;
+        border: 0;
+        border-radius: 30px;
+        margin-top: 28px;
+    }
+    &__slider{
+        display: none;
+    }
+}

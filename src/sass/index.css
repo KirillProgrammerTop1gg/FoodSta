@@ -39,4 +39,41 @@ img {
   max-width: 100%;
   height: auto;
   width: 100%;
+}
+
+.hero__hero {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  color: #2C2C2C;
+}
+.hero__description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2C2C2C;
+  margin-top: 28px;
+}
+.hero__button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2C2C2C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 98px;
+  height: 32px;
+  background: #BBF330;
+  border: 0;
+  border-radius: 30px;
+  margin-top: 28px;
+}
+.hero__slider {
+  display: none;
 }/*# sourceMappingURL=index.css.map */
