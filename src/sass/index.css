@@ -52,6 +52,7 @@ img {
   font-size: 14px;
   line-height: 1.5;
   color: #2C2C2C;
+  margin-top: 28px;
 }
 .hero__button {
   font-family: "Roboto";
@@ -69,6 +70,7 @@ img {
   background: #BBF330;
   border: 0;
   border-radius: 30px;
+  margin-top: 28px;
 }
 .hero__slider {
   display: none;
