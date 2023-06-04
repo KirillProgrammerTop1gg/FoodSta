@@ -1,12 +1,46 @@
-.hero{
-    &__title{
-        @include text-style(700, 28px, 1.18);
+.hero {
+    position: relative;
+    padding: 60px 0 50px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 37px;
     }
-    &__description{
+
+    @media screen and (min-width: 1200px) {
+        padding: 159px 0 3px;
+    }
+
+    &__title {
+        @include text-style(700, 28px, 1.18);
+
+        @media screen and (min-width: 768px) {
+            @include text-style(700, 42px, 1.2);
+            width: 537px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 48px;
+            width: 502.42px;
+        }
+    }
+
+    &__description {
         @include text-style(400, 14px, 1.5);
         margin-top: 28px;
+
+        @media screen and (min-width:768px) {
+            font-size: 16px;
+            margin-top: 44px;
+            width: 336px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 28px;
+            width: 502px;
+        }
     }
-    &__button{
+
+    &__button {
         @include text-style(500, 13px, 1.5);
         @include flex(center, center);
         width: 98px;
@@ -15,8 +49,40 @@
         border: 0;
         border-radius: 30px;
         margin-top: 28px;
+
+        @media screen and (min-width:768px) {
+            margin-top: 0;
+            position: absolute;
+            left: 32px;
+            top: 364px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            position: static;
+            margin-top: 40px;
+        }
     }
-    &__slider{
+
+    &__slider {
         display: none;
+        width: 320px;
+        height: 320px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        border: 14px solid $figures-color;
+        position: absolute;
+        top: 149px;
+        right: 32px;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+
+        @media screen and (min-width:1200px) {
+            top: 14px;
+            right: 16px;
+            width: 608px;
+            height: 580px;
+        }
     }
 }
