@@ -1,5 +1,7 @@
 .hero {
-    position: relative;
+    &>.container{
+        position: relative;
+    }
     padding: 60px 0 50px;
 
     @media screen and (min-width: 768px) {
@@ -54,7 +56,7 @@
             margin-top: 0;
             position: absolute;
             left: 32px;
-            top: 364px;
+            bottom: -72px;
         }
 
         @media screen and (min-width: 1280px) {
@@ -71,7 +73,7 @@
         border-radius: 50%;
         border: 14px solid $figures-color;
         position: absolute;
-        top: 149px;
+        bottom: -145px;
         right: 32px;
 
         @media screen and (min-width: 768px) {
@@ -79,7 +81,8 @@
         }
 
         @media screen and (min-width:1280px) {
-            top: 14px;
+            top: -145px;
+            bottom: 0;
             right: 16px;
             width: 608px;
             height: 580px;
