@@ -48,10 +48,10 @@
         width: 98px;
         height: 32px;
         background: $button-color;
-        transition: all 0.5s ease-in-out;
-        &:active && &:focus{
+        transition: all 0.2s ease-in-out;
+        &:active{
             background: $button-active-color;
-            transition: all 0.5s ease-in-out;
+            transition: all 0.2s ease-in-out;
         }
         border: 0;
         border-radius: 30px;
