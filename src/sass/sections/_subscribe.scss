@@ -82,7 +82,13 @@
         margin: 20px 0 0 auto;
         width: 103px;
         height: 42px;
-        background: $hoover-color;
+        background: $button-color;
+        transition: all 0.5s ease-in-out;
+    
+        &:active && &:focus {
+            background: $button-active-color;
+            transition: all 0.5s ease-in-out;
+        }
         border: 0;
         border-radius: 30px;
         @media screen and (min-width: 768px) {
