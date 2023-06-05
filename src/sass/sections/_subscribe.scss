@@ -13,22 +13,23 @@
         position: absolute;
         width: 280px;
         height: 78px;
-        top: -43px;
+        top: -95px;
         @media screen and (min-width: 768px) {
             height: 136px;
             width: 281px;
-            top: -74px;
-            right: 0;
+            top: -156px;
+            right: 32px;
         }
         @media screen and (min-width: 1280px) {
             width: 608px;
             height: 266px;
             top: -116px;
+            right: 16px;
         }
     }
     &__title{
         @include text-style(700,28px,1.2);
-        max-width: 280px;
+        max-width: 440px;
         @media screen and (min-width: 768px) {
             font-size: 42px;
             max-width: 656px;
@@ -41,10 +42,10 @@
     &__description{
         @include text-style(400, 14px, 1.14);
         margin-top: 20px;
-        max-width: 280px;
+        max-width: 440px;
         @media screen and (min-width: 768px) {
             @include text-style(400, 16px, 1.5);
-            max-width: 658px;
+            max-width: 656px;
         }
     }
     &__form{
