@@ -12,7 +12,12 @@
             Order Now
         </button>
         <div class="hero__slider">
-            <img src="#" alt="dish" class="hero__slide">
+            <picture class="hero__slide">
+                <source srcset="./images/bread-desktop@1x.webp 1x, ./images/bread-desktop@2x.webp 2x"
+                    media="(min-width: 1280px)">
+                <img srcset="./images/bread-tablet@1x.webp 1x, ./images/bread-tablet@2x.webp 2x"
+                    src="./images/bread-desktop@1x.webp" alt="dish">
+            </picture>
         </div>
     </div>
 </section>
