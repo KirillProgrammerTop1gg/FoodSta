@@ -11,10 +11,15 @@
     }
     &__img{
         position: absolute;
-        width: 280px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 161px;
         height: 78px;
         top: -95px;
         @media screen and (min-width: 768px) {
+            left: auto;
+            margin: 0;
             height: 136px;
             width: 281px;
             top: -156px;
