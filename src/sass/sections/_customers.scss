@@ -1,0 +1,67 @@
+.customers{
+    background-image: url(../images/customers-background-mobile@1x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/customers-background-tablet@1x.webp);
+        height: 544px;
+        padding-top: 60px;
+    }
+}
+.customers__title{
+    @include text-style(700, 28px, 1.17);
+}
+.customers__description{
+    @include text-style(400, 14px, 1.14);
+    margin-top: 20px;
+}
+.customers__list{
+    margnin-top: 32px;
+}
+.customers__item{
+    background-color: $background-color;
+    width: 100%;
+    max-width: 440px;
+    border-radius: 0 30px 30px 30px;
+    padding: 8px;
+}
+.customers__item:nth-child(1){
+    height: 247px;
+    margin-bottom: 24px;
+}
+.customers__item:nth-child(2){
+    height: 228px;
+}
+.stars__list{
+    @include flex(space-between,center);
+    width: 101px;
+}
+.stars__star{
+    width: 17px; 
+    height: 16px;
+}
+.customers__comment{
+    margin-top: 28px;
+    @include text-style(700, 16px, 1.18);
+    padding-bottom: 40px;
+}
+.customers__user{
+    @include flex(flex-start, center, row, wrap);
+    border-right: 0.854167px solid #7EB101;
+    width: 159px;
+    height: 50px;
+}
+.customers__img{
+    width: 48px; 
+    height: 48px;
+}
+.customers__name{
+    @include text-style(500, 14px, 1.5);
+    margin-left:16px;
+}
+.customers__nickname{
+    @include text-style(400, 14px, 1.5);
+    margin-left:16px;
+}
