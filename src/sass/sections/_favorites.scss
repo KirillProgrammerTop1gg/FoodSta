@@ -1,0 +1,35 @@
+.favorites__title{
+    color: #2C2C2C;
+    text-align: center;
+    width: 656px;
+}
+
+.favorites__list{
+    margin-right: 33px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.favorites__item{
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.favorites__text{
+    color: #2C2C2C;
+    text-align: center;
+    width: 656px;
+}
+
+.favorites__img{
+    margin-right: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 315px;
+}
+
+// .favorites{
+//     padding-top: 100px;
+//     padding-bottom: 100px;
+// }
