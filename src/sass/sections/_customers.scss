@@ -12,11 +12,18 @@
         padding: 60px 0 120px;
         background-size: 768px 544px;
     }
+    @media screen and (min-width: 1280px){
+        background-image: url(../images/customers-background-desktop@1x.webp);
+        height: 647px;
+        padding: 32px 0 200px;
+        background-size: 1280px 647px;
+    }
 }
 
 .customers__title {
     @include text-style(700, 28px, 1.17);
     width: 280px;
+    padding-top: 60px;
     @media screen and (min-width: 768px) {
         font-size: 42px;
         width: 501px;
@@ -32,12 +39,25 @@
         line-height: 1.19;
         width: 395px;
     }
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.18;
+        width: 395px;
+    }
+}
+.newline{
+    display: block;
 }
 
 .customers__list {
     margin-top: 32px;
     @media screen and (min-width: 768px) {
-        @include flex(space-between, center);
+        display: flex;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1280px) {
+        justify-content: start;
+        display: flex;
     }
 }
 
@@ -51,6 +71,10 @@
         max-width: 336px;
         padding: 12px;
     }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
+        max-width: 501px;
+    }
 }
 
 .customers__item:nth-child(1) {
@@ -61,6 +85,11 @@
         margin-right: 32px;
         height: 244px;
     }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
+        margin-right: 139px;
+    }
+   
 }
 
 .customers__item:nth-child(2) {
@@ -87,6 +116,10 @@
     @media screen and (min-width: 768px) {
         font-size: 18px;
         height: 84px;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 18px;
+        height: 63px;
     }
 }
 
