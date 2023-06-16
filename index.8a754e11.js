@@ -1,2 +1,0 @@
-const e={openModalBtn:document.querySelector("[data-open-menu]"),closeModalBtn:document.querySelector("[data-close-menu]"),backdrop:document.querySelector("[data-overlay]")};function o(){e.backdrop.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o),e.backdrop.addEventListener("click",(function(){console.log("Це клік в бекдроп")}));
-//# sourceMappingURL=index.8a754e11.js.map
