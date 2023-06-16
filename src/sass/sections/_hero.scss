@@ -70,21 +70,19 @@
         }
     }
 
-    &__slide {
+    &__container{
         display: none;
         width: 320px;
         height: 320px;
         background: #FFFFFF;
-        border-radius: 50%;
-        border: 14px solid $figures-color;
         position: absolute;
         bottom: -145px;
         right: 32px;
-
+    
         @media screen and (min-width: 768px) {
             display: block;
         }
-
+    
         @media screen and (min-width:1280px) {
             top: -145px;
             bottom: 0;
@@ -92,5 +90,99 @@
             width: 608px;
             height: 580px;
         }
+    }
+
+    &__slide {
+        border-radius: 50%;
+        border: 14px solid $figures-color;
+        display: none;
+        width: 320px;
+        height: 320px;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+
+        @media screen and (min-width:1280px) {
+            width: 608px;
+            height: 580px;
+        }
+    }
+}
+.slick-prev, .slick-next{
+    position: absolute;
+    top: 50%;
+    z-index: 500;
+    width: 34px;
+    height: 28px;
+    color: transparent;
+    padding: 8px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border: 0;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease-out;
+    &:active{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    }
+    @media screen and (min-width: 1280px){
+        width: 48px;
+        height: 40px;
+    }
+}
+.slick-prev {
+    left: -8px;
+    &::before {
+        display: block;
+        content: '';
+        width: 13px;
+        height: 13px;
+        border-left: 2px $maintext-color solid;
+        border-top: 2px $maintext-color solid;
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-out;
+        @media screen and (min-width: 1280px) {
+            width: 17px;
+            height: 17px;
+        }
+    }
+    &:hover {
+        &::before {
+            border-top-color: $footertext-color;
+            border-left-color: $footertext-color;
+            transition: all 0.3s ease-out;
+        }
+    }
+    @media screen and (min-width: 1280px){
+        left: -16px;
+        padding: 12px 19px;
+    }
+}
+.slick-next {
+    right: -8px;
+    &::before {
+        display: block;
+        content: '';
+        width: 13px;
+        height: 13px;
+        border-right: 2px $maintext-color solid;
+        border-top: 2px $maintext-color solid;
+        transform: rotate(45deg);
+        transition: all 0.3s ease-out;
+        @media screen and (min-width: 1280px) {
+            width: 17px;
+            height: 17px;
+        }
+    }
+    &:hover {
+        &::before {
+            border-top-color: $footertext-color;
+            border-right-color: $footertext-color;
+            transition: all 0.3s ease-out;
+        }
+    }
+    @media screen and (min-width: 1280px){
+        right: -16px;
+        padding: 12px 11px;
     }
 }
