@@ -27,10 +27,10 @@
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx){
-        background-image: url(../images/customers-background-desktop@2x.webp);
+            background-image: url(../images/customers-background-desktop@2x.webp);
         }
         height: 647px;
-        padding: 32px 0 200px;
+        padding: 100px 0 200px;
         background-size: 1280px 647px;
     }
 }
