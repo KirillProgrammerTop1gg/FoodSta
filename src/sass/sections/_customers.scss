@@ -6,14 +6,29 @@
     background-size: 480px 769px;
     background-position: center;
     padding: 60px 0;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image:url(../images/customers-background-mobile@2x.webp);
+    }
     @media screen and (min-width: 768px){
         background-image: url(../images/customers-background-tablet@1x.webp);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image:url(../images/customers-background-tablet@2x.webp);
+        }
         height: 544px;
         padding: 60px 0 120px;
         background-size: 768px 544px;
     }
     @media screen and (min-width: 1280px){
         background-image: url(../images/customers-background-desktop@1x.webp);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        background-image: url(../images/customers-background-desktop@2x.webp);
+        }
         height: 647px;
         padding: 32px 0 200px;
         background-size: 1280px 647px;
@@ -23,7 +38,6 @@
 .customers__title {
     @include text-style(700, 28px, 1.17);
     width: 280px;
-    padding-top: 60px;
     @media screen and (min-width: 768px) {
         font-size: 42px;
         width: 501px;
@@ -46,7 +60,10 @@
     }
 }
 .newline{
-    display: block;
+    @media screen and (min-width: 1280px) {
+        display: block;
+    }
+
 }
 
 .customers__list {
