@@ -15,14 +15,39 @@
 }
 
 .favorites__item{
-    flex-basis: calc((100% - 64px) / 3);
-    border: 16px solid #ffe550;
-    border-radius: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 25px 24px;
+    @media screen and (min-width: 1024px){
+        flex-basis: calc((100% - 64px) / 3);
+        border: 16px solid #ffe550;
+        border-radius: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px 24px;
+    }
+    // @media screen and (min-width: 768px){
+    //     flex-basis: calc((100% - 32px) / 2);
+    //     border: 14px solid #ffe550;
+    //     border-radius: 50%;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     padding: 21px 20px;
+    //     width: 315px;
+    // }
+    // @media screen and (max-width: 767px){
+    //     // flex-basis: calc((100% - 32px) / 2);
+    //     border: 14px solid #ffe550;
+    //     border-radius: 50%;
+    //     display: flex;
+    //     // flex-wrap: wrap;
+    //     padding: 21px 20px;
+    // }
 }
 
+// @media screen and (min-width: 768px){
+// }
+// @media screen and (min-width: 1200px){
+// }
+// @media screen and (max-width: 767px){
+// }
 .favorites__text{
     color: #2C2C2C;
     text-align: center;
