@@ -15,8 +15,7 @@
 }
 
 .favorites__item{
-    @media screen and (min-width: 1024px){
-        flex-basis: calc((100% - 64px) / 3);
+    @media screen and (min-width: 1280px){
         border: 16px solid #ffe550;
         border-radius: 50%;
         display: flex;
