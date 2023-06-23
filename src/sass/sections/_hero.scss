@@ -49,7 +49,7 @@
         height: 32px;
         background: $button-color;
         transition: all 0.2s ease-in-out;
-        &:active{
+        &:hover{
             background: $button-active-color;
             transition: all 0.2s ease-in-out;
         }

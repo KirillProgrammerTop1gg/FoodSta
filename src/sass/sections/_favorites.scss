@@ -43,6 +43,12 @@
     &:nth-child(n+4){
         display: none;
     }
+    transition: all 0.5s ease-out;
+    &:hover{
+        border-color: $hoover-color;
+        transition: all 0.5s ease-out;
+        transform: scale(1.1) rotate(360deg);
+    }
     @media screen and (min-width: 768px){
         width: 336px;
         height: 338px;
