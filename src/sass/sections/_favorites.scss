@@ -15,15 +15,16 @@
 
 .favorites__text{
     margin-top: 20px;
-    @include text-style(700, 14px, 1.14);
+    text-align: center;
+    @include text-style(400, 14px, 1.14);
     @media screen and (min-width: 768px){
-        @include text-style(700, 42px, 1.19);
+        @include text-style(400, 16px, 1.19);
     }
 }
 
 .favorites__list{
     margin-top: 60px;
-    @include flex(space-between, center, row, wrap);
+    @include flex(center, center, row, wrap);
     gap: 20px;
     @media screen and (min-width: 768px){
         gap: 32px;
@@ -54,6 +55,9 @@
         width: 395px;
         height: 397px;
         border-width: 16px;
+        &:nth-child(2n){
+            width: 394px;
+        }
     }
 }
 
