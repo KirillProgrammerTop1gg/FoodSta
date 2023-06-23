@@ -28,8 +28,8 @@
   }
   
   .footer__link {
-    @include text-style(400, 14px, 1.14);
-    color: #000000;
+    @include text-style(400, 10px, 1.12);
+    color: #7eb101;
   }
   
   .footer__name {
@@ -86,13 +86,6 @@
     @include text-style(400, 10px, 1.12);
     text-decoration-line: underline;
     color: #7eb101;
-  }
-  
-  .footer__link {
-    color: #7eb101;
-    @media screen and (min-width: 1280px) {
-      display: block;
-    }
   }
   
   .footer__text {
@@ -165,7 +158,6 @@
   .footer__pages {
     @media screen and (min-width: 768px) {
       display: flex;
-      align-items: center;
     }
     @media screen and (min-width: 1280px) {
       margin-left: 148px;
