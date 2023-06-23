@@ -75,7 +75,7 @@
         border: 0.854167px solid $figures-color;
         border-radius: 30px;
         padding-left: 20px;
-        @include text-style(400, 14px, 1.5, $maintext-color);
+        @include text-style(500, 14px, 1.5, $maintext-color);
         &::placeholder{
             @include text-style(400, 12px, 1.5, $email-color);
         }
@@ -94,7 +94,7 @@
         background: $button-color;
         transition: all 0.2s ease-in-out;
     
-        &:active {
+        &:hover {
             background: $button-active-color;
             transition: all 0.2s ease-in-out;
         }

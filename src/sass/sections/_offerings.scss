@@ -14,6 +14,7 @@
         border: 3px solid rgba(255, 255, 255, 0.5);
         padding: 12.22px;
         border-radius: 50%;
+        @include flex(center, center);
     }
     &__item:nth-child(2) {
         display: none;
@@ -45,6 +46,11 @@
         border-radius: 30px;
         @include text-style(500, 13px, 1.5);
         @include flex(center, center);
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            border: 2px solid $border-active-but-color;
+            transition: all 0.3s ease-in-out;
+        }
     }
     &__link{
         width: 106px;
