@@ -74,7 +74,6 @@
         display: none;
         width: 320px;
         height: 320px;
-        background: #FFFFFF;
         position: absolute;
         bottom: -145px;
         right: 32px;
@@ -93,6 +92,7 @@
     }
 
     &__slide {
+        background-color: #FFF;
         border-radius: 50%;
         border: 14px solid $figures-color;
         display: none;
