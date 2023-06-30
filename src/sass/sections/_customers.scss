@@ -1,10 +1,7 @@
 .customers {
-    // background-color: $figures-color;
     height: 769px;
     background-image: url(../images/customers-background-mobile@1x.webp);
-    background-repeat: no-repeat;
-    background-size: 480px 769px;
-    background-position: center;
+    background-size: 100% 769px;
     padding: 60px 0;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -20,7 +17,7 @@
         }
         height: 544px;
         padding: 60px 0 120px;
-        background-size: 768px 544px;
+        background-size: 100% 544px;
     }
     @media screen and (min-width: 1280px){
         background-image: url(../images/customers-background-desktop@1x.webp);
@@ -31,7 +28,7 @@
         }
         height: 647px;
         padding: 100px 0 200px;
-        background-size: 1280px 647px;
+        background-size: 100% 647px;
     }
 }
 

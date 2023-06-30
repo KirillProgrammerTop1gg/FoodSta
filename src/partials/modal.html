@@ -1,4 +1,4 @@
-<div class="backdrop " data-overlay-order>
+<div class="backdrop is-hidden" data-overlay-order>
   <section class="modal">
     <div class="container">
       <div class="modal__top">
@@ -8,30 +8,40 @@
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
-      </div>   
-      <ul class="modal__list">
-        <li class="modal__item">
-          <p class="modal__name">Name</p>
-          <input class="modal__input" type="text" placeholder="Your name" />
-        </li>
-        <li class="modal__item">
-          <p class="modal__name">Phone number</p>
-          <input
-            class="modal__input"
-            type="text"
-            placeholder="+38(0_ _) _ _ _   _ _   _ _"
-          />
-        </li>
-        <li class="modal__item">
-          <p class="modal__name">E-mail</p>
-          <input
-            class="modal__input"
-            type="text"
-            placeholder="example@gmail.com"
-          />
-        </li>
-      </ul>
-      <button class="modal__send">Send</button>
+      </div>
+      <form>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <p class="modal__name">Name</p>
+            <input
+              required
+              class="modal__input"
+              type="text"
+              placeholder="Your name" 
+            />
+          </li>
+          <li class="modal__item">
+            <p class="modal__name">Phone number</p>
+            <input
+              required
+              class="modal__input"
+              type="tel"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              pattern="\+38\(0\d{2}\)\s\d{3}\s\d{2}\s\d{2}"
+            />
+          </li>
+          <li class="modal__item">
+            <p class="modal__name">E-mail</p>
+            <input
+              required
+              class="modal__input"
+              type="email"
+              placeholder="example@gmail.com"
+            />
+          </li>
+        </ul>
+        <button class="modal__send" type="submit">Send</button>
+      </form>
     </div>
   </section>
 </div>

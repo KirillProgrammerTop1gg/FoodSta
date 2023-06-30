@@ -5,7 +5,7 @@
     top: 0;
     right: 0; 
     background: rgba(94, 99, 99, 0.7);;
-    z-index: 6;
+    z-index: 1000;
 }
 .backdrop.is-hidden{
     opacity: 0;
@@ -18,13 +18,16 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 7;
+    z-index: 1001;
     transform: translate(-50%,-50%);
     border-radius: 30px;
     @media screen and (min-width: 768px) {
         width: 458px;
         height: 449px;
         flex-shrink: 0;
+    }
+    & .container{
+        padding: 0 32px;
     }
 }
 .modal__top{
@@ -76,8 +79,11 @@
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
     width: 280px;
     height: 48px;
-    padding-left: 12px;
-    color: #C4C4C4;
+    padding: 12px;
+    &:placeholder{
+        @include text-style(400, 16px, 1.25, #C4C4C4);
+    }
+    @include text-style(400, 16px, 1.25);
     @media screen and (min-width: 768px) {
         border: 1px solid rgba(18, 18, 18, 0.12);
         width: 394px;
@@ -99,8 +105,10 @@
     @media screen and (min-width: 768px) {
         margin-left: 142px;
     }
+    transition: all 0.3s linear;
 }
 .modal__send:hover{
+    transition: all 0.3s linear;
     border: 2px solid var(--dark-green, #7EB101);
     background: var(--button-green, #BBF330);
 }
