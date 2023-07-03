@@ -5,8 +5,46 @@
     background-size: 480px 1050px;
     height: 1050px;
     padding: 70.02px 0 60px;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image:url(../images/hero-background-mobile@2x.webp);
+    }
+    @media screen and (min-width: 768px) {
+        background: url("../images/hero-background-tablet@1x.webp");
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image:url(../images/hero-background-tablet@2x.webp);
+        }
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 768px 1140px;
+        height: 1140px;
+        z-index: 1;
+    }
+    @media screen and (min-width: 1280px) {
+        background: url("../images/hero-background-desktop@1x.webp");
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image:url(../images/hero-background-desktop@2x.webp);
+        }
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1280px 824px;
+        height: 824px;
+        z-index: 1;
+        
+    }
     &__list{
         @include flex(center, center);
+        @media screen and (min-width: 768px){
+            justify-content: normal;
+        }
+        @media screen and (min-width: 1280px) {
+            float: left;
+        }
     }
     &__item:nth-child(1){
         width: 280px;
@@ -15,28 +53,83 @@
         padding: 12.22px;
         border-radius: 50%;
         @include flex(center, center);
+        @media screen and (min-width: 768px){
+            margin-right: 29px;
+            width: 357px;
+            height: 357px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 550px;
+            height: 550px;
+            margin-right: 90px;
+        }
     }
     &__item:nth-child(2) {
         display: none;
+        @media screen and (min-width: 768px){
+            display: block;
+            width: 166px;
+            height: 210.425px;
+            margin-top: 160px;
+            margin-bottom: 127px;
+        }
+        @media screen and (min-width: 1280px) {
+            display: none;
+        }
     }
     &__item:nth-child(3) {
         display: none;
+        @media screen and (min-width: 768px){
+            display: block;
+            width: 108px;
+            height: 136px;
+            margin-top: 234px;
+            margin-bottom: 128px;
+            margin-left: 44px;
+        }
+        @media screen and (min-width: 1280px) {
+            display: none;
+        }
     }
     &__title{
         @include text-style(700, 28px, 1.18);
         margin-top: 60px;
+        @media screen and (min-width: 768px){
+            @include text-style(700, 42px, 1.18);
+        
+        }
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            width: 526.167px;
+            flex-direction: column;
+            padding-top: 113px;
+        }
     }
     &__description {
         width: 100%;
         max-width: 440px;
         @include text-style(400, 14px, 1.14);
         margin-top: 28px;
+        @media screen and (min-width: 768px){
+            @include text-style(500, 16px, 1.18);
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 550px;
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__container{
         @include flex(center, center);
         gap: 24px;
         margin-top: 28px;
         width: 213px;
+        @media screen and (min-width: 768px){
+            margin-top: 40px;
+        }
+        @media screen and (min-width: 1280px) {
+            justify-content: flex-start;
+        }
     }
     &__but{
         width: 106px;
@@ -51,6 +144,10 @@
             border: 2px solid $border-active-but-color;
             transition: all 0.3s ease-in-out;
         }
+        @media screen and (min-width: 1280px) {
+
+        }
+
     }
     &__link{
         width: 106px;
@@ -58,7 +155,12 @@
         @include text-style(400, 13.6667px, 1.5, #000);
         @include flex(space-between, center);
         gap: 3.42px;
+        @media screen and (min-width: 1280px) {
+            display: none;
+    
+        }
     }
+ 
 }
 .apple{
     border-radius: 50%;
@@ -66,6 +168,16 @@
     height: 255.55px;
     background-color: $background-color;
     position: relative;
+    @media screen and (min-width: 768px){
+        width: 325.844px;
+        height: 325.844px;
+        
+    }
+    @media screen and (min-width: 1280px) {
+        width: 502px;
+        height: 502px;
+        float: left;
+    }
     &__shadow{
         width: 128.29px;
         height: 44.29px;        
@@ -75,6 +187,12 @@
         bottom: 25.96px;
         left: 66.69px;
         z-index: 2;
+        @media screen and (min-width: 1280px) {
+            position: absolute;
+            width: 252px;
+            height: 87px;
+            left: 131px;
+        }
     }
     &__img{
         display: block;
@@ -86,13 +204,29 @@
         right: 0;
         margin: 0 auto;
         z-index: 3;
+        @media screen and (min-width: 768px){
+            width: 258px;
+            height: 326px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 396px;
+            height: 502px;
+
+        }
     }
 }
 .benefits{
     margin-top: 28px;
     gap: 28px;
     @include flex(center, center, column);
-    &__svg{
+    @media screen and (min-width: 768px){      
+        margin-top: 40px;
+        flex-flow: row;
+    }
+    @media screen and (min-width: 1280px) {
+            
+    }
+    svg{
         width: 32px;
         height: 32px;
     }
@@ -112,5 +246,13 @@
     &__description {
         @include text-style(400, 14px, 1.14);
         margin-top: 16px;
+    }
+}
+.span{
+    @media screen and (min-width: 768px){      
+        display: block;
+    }
+    @media screen and (min-width: 1280px) {
+            
     }
 }
