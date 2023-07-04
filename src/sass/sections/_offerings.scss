@@ -35,7 +35,7 @@
         background-size: 1280px 824px;
         height: 824px;
         z-index: 1;
-        
+        padding: 177px 0 43px;
     }
     &__list{
         @include flex(center, center);
@@ -102,7 +102,7 @@
             display: flex;
             width: 526.167px;
             flex-direction: column;
-            padding-top: 113px;
+            padding-top: 30px;
         }
     }
     &__description {
@@ -117,6 +117,7 @@
             max-width: 550px;
             display: flex;
             flex-direction: column;
+            @include text-style(400, 16px, 1.5);
         }
     }
     &__container{
@@ -246,6 +247,9 @@
     &__description {
         @include text-style(400, 14px, 1.14);
         margin-top: 16px;
+        @media screen and (min-width: 1280px) {
+            @include text-style(400, 14px, 1.5);
+        }
     }
 }
 .span{
