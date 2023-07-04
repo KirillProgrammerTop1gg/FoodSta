@@ -19,6 +19,7 @@
         }
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         background-size: 768px 1140px;
         height: 1140px;
         z-index: 1;
@@ -32,10 +33,11 @@
         }
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         background-size: 1280px 824px;
         height: 824px;
         z-index: 1;
-        
+        padding: 231px 0 100px;
     }
     &__list{
         @include flex(center, center);
@@ -102,7 +104,8 @@
             display: flex;
             width: 526.167px;
             flex-direction: column;
-            padding-top: 113px;
+            margin-top: 0;
+            padding-top: 45px;
         }
     }
     &__description {
@@ -117,6 +120,7 @@
             max-width: 550px;
             display: flex;
             flex-direction: column;
+            @include text-style(400, 16px, 1.5);
         }
     }
     &__container{
@@ -143,6 +147,7 @@
         &:hover{
             border: 2px solid $border-active-but-color;
             transition: all 0.3s ease-in-out;
+
         }
         @media screen and (min-width: 1280px) {
 
@@ -246,6 +251,9 @@
     &__description {
         @include text-style(400, 14px, 1.14);
         margin-top: 16px;
+        @media screen and (min-width: 1280px) {
+            @include text-style(400, 14px, 1.5);
+        }
     }
 }
 .span{
