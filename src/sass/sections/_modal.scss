@@ -69,7 +69,9 @@
    padding-top: 4px; 
 }
 .modal__item{
-    margin-left: 16px;
+    @media screen and (min-width: 768px){
+        margin-left: 16px;
+    }
 }
 .modal__name{
     @include text-style(500, 16px, 1.17);
