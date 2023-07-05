@@ -1,0 +1,16 @@
+.top{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(196, 196, 196, 0.5);
+    border: 0;
+    border-radius: 50%;
+    &__link{
+        font-size: 25px;
+        &:active {
+            color: $hoover-color;
+        }
+    }
+}
